@@ -1,3 +1,3 @@
 interface IAnimal {
-    public void speak();
+    void speak();
 }
