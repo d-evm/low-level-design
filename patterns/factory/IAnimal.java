@@ -1,3 +1,0 @@
-interface IAnimal {
-    void speak();
-}
