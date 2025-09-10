@@ -21,6 +21,7 @@ class Directory implements SystemComponent{
 
     public void addComponent(SystemComponent component){
         components.add(component);
+        size += component.getSize();
     }
 
     @Override
@@ -30,11 +31,7 @@ class Directory implements SystemComponent{
 
     @Override
     public double getSize(){
-        double totalSize = size;
-        for (SystemComponent component : components){
-            totalSize += component.getSize();
-        }
-        return totalSize;
+        return size;
     }
 }
 
